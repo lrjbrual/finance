@@ -2,7 +2,16 @@
   "name": "finance",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "@rails/webpacker": "3.5",
+    "bootstrap": "^4.1.3",
+    "bootstrap-datepicker": "^1.8.0",
+    "chart.js": "^2.7.3",
+    "holderjs": "^2.9.6",
+    "jquery": "^3.3.1",
+    "jquery-scroll-lock": "^3.1.3",
+    "jquery.scrollbar": "^0.2.11",
+    "nouislider": "^12.1.0"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
