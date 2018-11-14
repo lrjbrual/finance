@@ -2,6 +2,7 @@
   "name": "finance",
   "private": true,
   "dependencies": {
+    "@creative-tim-official/argon-dashboard-free": "^1.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
     "@rails/webpacker": "3.5",
     "bootstrap": "^4.1.3",
