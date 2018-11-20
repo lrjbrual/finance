@@ -10,9 +10,11 @@
 
   <body lang="en">
     <div class="main-content">
-      <%= render 'partials/nav' %>
+      <%= render 'shared/nav' %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <%= yield %>
-      <%= render 'partials/footer' %>
+      <%= render 'shared/footer' %>
     </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag "application" %>

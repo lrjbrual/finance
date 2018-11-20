@@ -1,3 +1,24 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.layoutTop{
+  margin-top: -80px;
+}
+.section-shaped {
+  position: relative;
+}
+.section-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+// @media (min-width: 992px)
+// .pb-250 {
+//     padding-bottom: 250px!important;
+// }
+.section-shaped .shape {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-shaped .shape-style-1.shape-default {
+  background: linear-gradient(150deg,#7795f8 15%,#6772e5 70%,#555abf 94%);
+}
