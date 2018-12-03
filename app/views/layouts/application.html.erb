@@ -11,8 +11,7 @@
   <body lang="en">
     <div class="main-content">
       <%= render 'shared/nav' %>
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+      <%= render 'shared/flash' %>
         <%= yield %>
       <%= render 'shared/footer' %>
     </div>

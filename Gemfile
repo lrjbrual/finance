@@ -15,6 +15,7 @@ gem 'webpacker'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
+gem 'nokogiri'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
@@ -22,10 +23,15 @@ group :development, :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'database_cleaner'
+  gem 'pry-rails'
+  gem 'factory_bot'
+  gem 'rspec-rails', '~> 3.5.0'
 end
+
+gem 'web-console', group: :development
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
