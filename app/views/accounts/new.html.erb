@@ -40,7 +40,7 @@
                 <small>Register Now</small>
               </div>
               <%= simple_form_for (@account) do |account| %>
-                <%# <form role="form"> %>
+                <form role="form">
                   <%# <div class="form-group">
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
@@ -50,36 +50,25 @@
                     </div>
                   </div> %>
                   <div class="form-group">
-                    <div class="input-group input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                      </div>
-                      <%= account.input :name, class: "form-control", type: "text", placeholder: "Name" %>
+                    <div class=" input-group-alternative mb-3">
+                      <%= account.input :name, placeholder: "Name", class: "input-group input-group-prepend form-control", type: "text", label: false %>
                     </div>
                   </div>
+
                   <%= account.fields_for :owner do |owner| %>
                   <div class="form-group">
-                    <div class="input-group input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                      </div>
-                      <%= owner.input :email, class: "form-control", type: "email", placeholder: "Email Address"   %>
+                    <div class="input-group-alternative mb-3">
+                      <%= owner.input :email, class: "input-group input-group-prepend form-control", type: "email", placeholder: "Email Address", label: false %>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="input-group input-group-alternative">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                      </div>
-                      <%= owner.input :password, class: "form-control", placeholder: "Password", type: "password" %>
+                    <div class="input-group-alternative">
+                      <%= owner.input :password, class: "input-group input-group-prepend form-control", placeholder: "Password", type: "password", label: false %>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="input-group input-group-alternative">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                      </div>
-                      <%= owner.input :password_confirmation, class: "form-control", placeholder: "Confirm Password", type: "password"  %>
+                    <div class="input-group-alternative">
+                      <%= owner.input :password_confirmation, class: "input-group input-group-prepend form-control", placeholder: "Confirm Password", type: "password", label: false %>
                     </div>
                   </div>
                   <%# <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div> %>
@@ -98,7 +87,7 @@
                     <%= account.submit class: "btn btn-primary mt-4" %>
                     <%# <button type="button" class="btn btn-primary mt-4">Create account</button> %>
                   </div>
-                <%# </form> %>
+                </form>
               <% end %>
             </div>
           </div>
