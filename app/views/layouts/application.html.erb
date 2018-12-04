@@ -17,7 +17,6 @@ Signed in as <%= current_user.email %>
 <%= link_to "Sign in", new_user_session_path %>
 <% end %>
       <%= render 'shared/nav' %>
-      <%= render 'shared/flash' %>
         <%= yield %>
       <%= render 'shared/footer' %>
     </div>

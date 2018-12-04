@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap'
 gem 'devise'
+gem 'sidekiq'
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
@@ -30,6 +31,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'factory_bot'
   gem 'rspec-rails', '~> 3.5.0'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
+  gem 'poltergeist'
 end
 
 gem 'web-console', group: :development
