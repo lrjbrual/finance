@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finance</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body lang="en" cz-shortcut-listen="true">
+    <div class="main-content">
+<% if user_signed_in? %>
+Signed in as <%= current_user.email %>
+<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<% else %>
+<%= link_to "Sign in", new_user_session_path %>
+<% end %>
+      <%= render 'shared/nav' %>
+      <div class="main-content">
+        <%= render 'shared/navtop' %>
+        <%= yield %>
+      </div>
+      <%= render 'shared/footer' %>
+    </div>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag "application" %>
+  </body>
+</html>
